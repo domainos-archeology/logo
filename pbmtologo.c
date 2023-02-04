@@ -3,10 +3,13 @@
  */
 
 #include <stdio.h>
+#include <stdlib.h>
 
-main(ac, av)
-int ac;
-char *av[];
+void cpascii();
+void cpraw();
+
+int
+main(int ac, char** av)
 {
 	char buf[80], stdoutbuf[BUFSIZ], ptype;
 	int width, height;
@@ -44,6 +47,7 @@ char *av[];
 	exit(0);
 }
 
+void
 cpascii()
 {
 	int px, n = 0, bit;
@@ -60,6 +64,7 @@ cpascii()
 	}
 }
 
+void
 cpraw()
 {
 	int c;

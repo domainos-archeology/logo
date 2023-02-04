@@ -3,10 +3,10 @@
  */
 
 #include <stdio.h>
+#include <stdlib.h>
 
-main(ac, av)
-int ac;
-char *av[];
+int
+main(int ac, char**av)
 {
 	char stdoutbuf[BUFSIZ];
 	int c;
